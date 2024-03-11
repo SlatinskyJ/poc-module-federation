@@ -1,5 +1,4 @@
 import { Select } from 'antd';
-import { BaseOptionType } from 'antd/es/select';
 import React from 'react';
 import { useLanguageContext } from './contexts/ChangeLanguageContext';
 import { ELanguage } from './models';
