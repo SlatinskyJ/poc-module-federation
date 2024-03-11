@@ -1,9 +1,11 @@
 import './App.css';
 import { createHashHistory } from 'history';
 import React from 'react';
+import { IntlProvider } from 'react-intl';
 import { Router } from 'react-router-dom';
-import AppLayout from './modules/AppLayout/AppLayout';
+import AppLayout from './modules/Layouts/AppLayout';
 import Routes from './Routes';
+import Localization from './modules/common/Localization';
 
 const appCode = 'CZ/';
 
@@ -14,9 +16,11 @@ function App() {
 
   return (
     <Router history={history}>
-      <AppLayout>
-        <Routes />
-      </AppLayout>
+      <Localization>
+        <AppLayout>
+          <Routes />
+        </AppLayout>
+      </Localization>
     </Router>
   );
 }

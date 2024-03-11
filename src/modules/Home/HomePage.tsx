@@ -1,5 +1,8 @@
-import Page from '../AppLayout/Page';
+import { useIntl } from 'react-intl';
+import Page from '../Layouts/Page';
+import translations from './translations';
 
 export default function HomePage() {
-  return <Page title="Home">This is home page</Page>;
+  const { formatMessage } = useIntl();
+  return <Page title={formatMessage(translations.title)}>This is home page</Page>;
 }
