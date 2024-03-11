@@ -1,1 +1,2 @@
-export * from './ELanguage';
+export * as ELanguage from './ELanguage';
+export * as ILanguage from './ILanguage';

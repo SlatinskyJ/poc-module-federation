@@ -1,7 +1,6 @@
 import './App.css';
 import { createHashHistory } from 'history';
 import React from 'react';
-import { IntlProvider } from 'react-intl';
 import { Router } from 'react-router-dom';
 import AppLayout from './modules/Layouts/AppLayout';
 import Routes from './Routes';

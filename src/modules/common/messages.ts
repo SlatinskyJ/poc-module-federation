@@ -1,4 +1,4 @@
-import { ELanguage } from './models';
+import ELanguage from './models/ELanguage';
 
 import commonMessagesCs from './translations/cs.json';
 import commonMessagesEn from './translations/en.json';
@@ -11,7 +11,7 @@ import teamMessagesEn from '../Team/translations/en.json';
 import userMessagesCs from '../User/translations/cs.json';
 import userMessagesEn from '../User/translations/en.json';
 
-export const messages: Record<string, Record<string, string>> = {
+export default {
   [ELanguage.cs]: {
     ...commonMessagesCs,
     ...filesMessagesCs,
@@ -26,4 +26,4 @@ export const messages: Record<string, Record<string, string>> = {
     ...teamMessagesEn,
     ...userMessagesEn,
   },
-};
+} as Record<string, Record<string, string>>;

@@ -4,5 +4,9 @@ import translations from './translations';
 
 export default function HomePage() {
   const { formatMessage } = useIntl();
-  return <Page title={formatMessage(translations.title)}>This is home page</Page>;
+  return (
+    <Page title={formatMessage(translations.title)}>
+      <div>This is home page</div>
+    </Page>
+  );
 }

@@ -1,7 +1,7 @@
 import { Select } from 'antd';
 import React from 'react';
 import { useLanguageContext } from './contexts/ChangeLanguageContext';
-import { ELanguage } from './models';
+import ELanguage from './models/ELanguage';
 
 export default function LanguageSelect() {
   const { languages, defaultLanguage, toggleLanguage } = useLanguageContext();

@@ -30,7 +30,7 @@ const useItems = (): MenuItem[] => {
   ];
 };
 
-export default function AppLayout({ children }: React.PropsWithChildren) {
+export default function AppLayout({ children }: React.PropsWithChildren<object>) {
   const [collapsed, setCollapsed] = useState(false);
   const [urlPath, setUrlPath] = useState<string[]>([]);
   const {

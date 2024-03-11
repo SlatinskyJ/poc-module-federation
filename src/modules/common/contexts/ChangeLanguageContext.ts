@@ -1,5 +1,5 @@
 import React from 'react';
-import { ELanguage } from '../models';
+import ELanguage from '../models/ELanguage';
 import ILanguage from '../models/ILanguage';
 
 export const appLanguages: Record<string, ILanguage> = {
@@ -20,7 +20,7 @@ export const ChangeLanguageContext = React.createContext<ILanguageContext>({
   languages: appLanguages,
   currentLanguage: ELanguage.en,
   defaultLanguage: DEFAULT_LANGUAGE,
-  toggleLanguage: () => void 0,
+  toggleLanguage: () => undefined,
 });
 
 export const useLanguageContext = () => React.useContext(ChangeLanguageContext);
