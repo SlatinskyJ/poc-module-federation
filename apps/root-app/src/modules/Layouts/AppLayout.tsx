@@ -60,6 +60,8 @@ export default function AppLayout({ children }: React.PropsWithChildren<object>)
             <LanguageSelect />
           </Flex>
         </Layout.Header>
+        {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
+        {/* @ts-ignore */}
         <Layout.Content style={{ margin: '0 16px' }}>{children}</Layout.Content>
         <Layout.Footer style={{ textAlign: 'center' }}>
           POC for module federation ©2024 Created by Jakub Slatinsky

@@ -1,3 +1,5 @@
 import * as UserModule from './UserModule';
 
-export default UserModule;
+export default {
+  UserModule,
+};
